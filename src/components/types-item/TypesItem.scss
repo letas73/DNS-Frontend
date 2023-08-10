@@ -1,0 +1,14 @@
+.types-item {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__link {
+
+    &:hover {
+      color: rgb(209, 138, 7);
+    }
+  }
+}

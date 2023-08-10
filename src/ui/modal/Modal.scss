@@ -1,0 +1,12 @@
+.modal {
+
+  &__close {
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+  }
+
+  .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    max-width: 800px !important;
+  }
+}

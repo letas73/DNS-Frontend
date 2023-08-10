@@ -1,0 +1,17 @@
+.auth-modal {
+
+  &__input {
+    margin-bottom: 15px !important;
+    
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &__submit {
+    margin-top: 20px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    background: linear-gradient(0deg, #fc8507, #ffa218) !important;
+  }
+}

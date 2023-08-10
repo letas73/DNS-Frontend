@@ -1,0 +1,21 @@
+.brands-item {
+  
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 69px;
+    padding: 0 18px;
+    background-color: #fff;
+    border-radius: 16px;
+
+    &:hover {
+      box-shadow: 0 0 0 1px #0000000a, 0 4px 4px #0000000a, 0 20px 40px #00000014;
+      transition: .2s;
+    }
+  }
+}

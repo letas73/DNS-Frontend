@@ -1,0 +1,15 @@
+.admin-modal {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+
+  &__input {
+    min-width: 250px !important;
+    margin-right: 15px !important;
+  }
+
+  &__add {
+    margin-top: 20px !important;
+    background-color: #de940b !important;
+  }
+}

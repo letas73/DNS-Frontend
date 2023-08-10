@@ -1,0 +1,5 @@
+.recents-list {
+  display: grid;
+  grid-template-columns: repeat(3, 245px);
+  gap: 30px;
+}

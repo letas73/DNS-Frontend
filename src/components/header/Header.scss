@@ -1,0 +1,172 @@
+.header {
+  padding: 30px 0;
+
+  &.shadow {
+    background-color: #fff;
+    box-shadow: 0 1px 2px #0000001a;
+    margin-bottom: 24px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 5px;
+    padding: 15px 30px;
+    background: linear-gradient(0deg, #fc8507, #ffa218);
+    border-radius: 12px;
+  }
+
+  &__search {
+    width: 534px;
+    background-color: #ededed !important;
+    border-radius: 8px;
+
+    .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+      border: none !important;
+    }
+  }
+
+  &__menu {
+    display: flex;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+
+        .header__menu-text {
+          color: #9e9e9e;
+        }
+      }
+    }
+
+    &-icon {
+      color: grey !important;
+      margin-bottom: 5px;
+    }
+
+    &-text {
+      font-size: 14px;
+      color: #4e4e4e;
+    }
+
+    &-button {
+      padding: 0 !important;
+      margin-left: 15px !important;
+
+      &:hover {
+        background: none !important;
+      }
+    }
+  }
+
+  &-profile {
+    position: relative;
+    
+    &__wrapper {
+      position: absolute;
+      right: 0;
+      top: 50px;
+      z-index: 5;
+      min-width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 1px 2px #0000001a;
+      border-radius: 12px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .15s ease-out, visibility .15s ease-out;
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity .15s ease-out, visibility .15s ease-out;
+      }
+    }
+
+    &__avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border: 2px dashed #ddd;
+      border-radius: 100%;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    &__text {
+      margin-bottom: 25px !important;
+    }
+
+    &__btns {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__btn {
+      margin-bottom: 15px !important;
+      background: linear-gradient(0deg, #fc8507, #ffa218) !important;
+
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    &__user {
+
+      &-id {
+        font-weight: 700;
+        font-size: 16px;
+        display: inline-block;
+        margin-bottom: 25px;
+        transition: color .1s ease-in-out;
+
+        &:hover {
+          transition: color .1s ease-in-out;
+          color: rgb(222, 148, 11);
+        }
+      }
+
+      &-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &-link {
+        margin-bottom: 15px;
+        transition: color .1s ease-in-out;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &:hover {
+          transition: color .1s ease-in-out;
+          color: rgb(222, 148, 11);
+        }
+      }
+
+      &-logout {
+        margin-top: 20px !important;
+      }
+    }
+  }
+}

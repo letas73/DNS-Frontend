@@ -1,0 +1,127 @@
+.cart {
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    margin-right: 10px;
+  }
+
+  &__count {
+    font-size: 14px;
+    color: #999;
+    margin-top: 6px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__content {
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  &__sidebar {
+    width: 370px;
+    flex-shrink: 0;
+    padding: 24px 16px 16px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+
+    &-title {
+      font-weight: 700;
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    &-info {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    &-total {
+
+      &-caption {
+        font-size: 12px;
+        color: #8c8c8c;
+        margin-bottom: 4px;
+      }
+
+      &-count {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+
+    &-price {
+      font-weight: 700;
+      font-size: 18px;
+      color: #333;
+    }
+
+    &-btn {
+      font-weight: 700 !important;
+      color: #fff !important;
+      min-height: 44px !important;
+      padding: 15px !important;
+      background-image: linear-gradient(0deg, #fc8507, #ffa218) !important;
+    }
+  }
+
+  &__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    padding: 50px 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    text-align: center;
+
+    &-title {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: 1.42857;
+      color: #333;
+      max-width: 337px;
+      margin-bottom: 20px;
+    }
+
+    &-btns {
+      display: flex;
+    }
+
+    &-home {
+      color: #333 !important;
+      padding: 10px 20px !important;
+      background-color: transparent !important;
+      border: 1px solid #d9d9d9 !important;
+      margin-right: 15px !important;
+    }
+
+    &-product {
+      font-weight: 700 !important;
+      color: #fff !important;
+      padding: 10px 20px !important;
+      background-image: linear-gradient(0deg, #fc8507, #ffa218) !important;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.admin-item {
+  color: #333;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color .1s ease-in-out, color .1s ease-in-out;
+
+  &:hover {
+    transition: background-color .1s ease-in-out, color .1s ease-in-out;
+    color: rgb(222, 148, 11);
+    background-color: #fff7da;
+  }
+
+  &.active {
+    color: rgb(222, 148, 11);
+    border-left: 3px solid rgb(222, 148, 11);
+    border-radius: 5px;
+  }
+}

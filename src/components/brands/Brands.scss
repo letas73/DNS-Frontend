@@ -1,0 +1,60 @@
+.brands {
+  
+  &:hover {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: flex !important;
+      transition: .2 ease;
+    }
+  }
+}
+
+.swiper-button-lock {
+  display: flex !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+  width: 48px !important;
+  height: 48px !important;
+  background-color: #fff !important;
+  box-shadow: 0 4px 10px #0000001a !important;
+  border-radius: 100% !important;
+  transition: .2 ease;
+
+  &::after {
+    display: none !important;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.swiper-button-prev {
+
+  &::before {
+    background-image: url('./ArrowLeftIcon.png');
+  }
+}
+
+.swiper-button-next {
+
+  &::before {
+    background-image: url('./ArrowRightIcon.png');
+  }
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 1 !important;
+  background-color: #eee !important;
+}
